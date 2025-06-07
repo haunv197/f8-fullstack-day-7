@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Froggy Pro</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      img {
+        max-width: 100%;
+      }
+      .inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      figure {
+        margin: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="inner">
+          <!-- Pond 1 -->
+          <figure>
+            <img src="./assets/img/pond-1.jpg" alt="Hoàn thành Pond số 1" />
+            <figcaption>Hoàn thành Pond số 1</figcaption>
+          </figure>
+
+          <!-- Pond 4 -->
+          <figure>
+            <img src="./assets/img/pond-4.jpg" alt="Hoàn thành Pond số 4" />
+            <figcaption>Hoàn thành Pond số 4</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
