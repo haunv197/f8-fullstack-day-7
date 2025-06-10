@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:300,400,600,700");
+
+:root {
+  --font-primary: "Source Sans Pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper {
+  display: flex;
+  background: #191d1e;
+  min-height: 100vh;
+}
+.lesson-content {
+  width: 70%;
+}
+.lesson-sidebar {
+  width: 30%;
+  background-color: #272a31;
+}
+
+.nav-sidebar li a {
+  border-bottom: 1px solid #4e5456;
+  display: block;
+  background-color: #272a31;
+}
+
+.nav-sidebar > li > a {
+  padding: 1.5rem 1.6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: #3e424a;
+}
+
+.nav-sidebar ul li a {
+  padding: 1.25rem 1.5rem 1.25rem 3rem;
+}
