@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:300,400,600,700");
 :root {
   --font-heading: "PT Sans", sans-serif;
+  --font-secondary: "Source Sans Pro", sans-serif;
   --color-primary: #b80257;
   --color-secondary: #783df0;
 }
@@ -27,7 +28,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
   line-height: 1.42857143;
 }
@@ -125,7 +126,11 @@ button {
   padding: 0 1.5rem;
 }
 
-.navbar li a {
+.navbar > li {
+  position: relative;
+}
+
+.navbar > li > a {
   padding: 0.6rem 2.5rem 2rem;
   text-transform: uppercase;
   letter-spacing: 1.1px;
@@ -133,17 +138,57 @@ button {
   font-weight: 700;
   display: inline-block;
 }
-.navbar li a:hover {
-  color: var(--color-secondary);
+
+.navbar > li > a:hover {
+  color: var(--color-primary);
+}
+
+.navbar .sub-menu {
+  position: absolute;
+  width: 220px;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  font-family: var(--font-secondary);
+  box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.navbar > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar .sub-menu a {
+  display: block;
+  padding-left: 2.5rem;
+  line-height: 4.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  text-transform: capitalize;
+}
+
+.navbar .sub-menu a:hover {
+  color: #fff;
+  background-color: var(--color-primary);
+  padding-left: 2.9rem;
 }
 
 /* User action */
 .user-action {
   display: flex;
   gap: 2.8rem;
+  font-family: var(--font-secondary);
+}
+.user-action li {
+  position: relative;
+  height: 32px;
 }
 
-.user-action button {
+.user-action li > button {
   color: #fff;
   font-size: 1.8rem;
   line-height: 3.2rem;
@@ -151,6 +196,47 @@ button {
 
 .user-action .icon-cart {
   font-size: 2rem;
+}
+
+.user-action .form-search {
+  position: absolute;
+  width: 28rem;
+  height: 55px;
+  padding: 0.5rem;
+  top: 100%;
+  right: -2.8rem;
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+  font-size: 1.4rem;
+  display: none;
+}
+
+.user-action button label {
+  cursor: pointer;
+}
+
+.user-action input[type="checkbox"]:checked ~ .form-search {
+  display: block;
+}
+
+.user-action .form-search input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ececec;
+  padding-right: 4.9rem;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.user-action .form-search button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.4rem;
+  z-index: 2;
+  background-color: var(--color-primary);
+  width: 4.85rem;
+  height: 4.6rem;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 /* Main Title */
@@ -245,6 +331,7 @@ button {
 
 .course-list ul li a:hover {
   color: var(--color-secondary);
+  padding-left: 3.5rem;
 }
 
 /* Content */
@@ -297,6 +384,14 @@ button {
   position: relative;
   overflow: hidden;
 }
+.list-card .item-card__img img {
+  transition: 0.5s;
+}
+.list-card .item-card__img:hover img {
+  opacity: 0.8;
+  transform: scale3D(1.1, 1.1, 1);
+}
+
 .list-card .item-card__img .icon-top-right {
   position: absolute;
   width: 22rem;
@@ -307,6 +402,7 @@ button {
   transform: rotate(35deg);
   right: -9.4rem;
   top: -1.2rem;
+  z-index: 2;
 }
 .list-card .item-card__img .icon-top-right i {
   position: absolute;
