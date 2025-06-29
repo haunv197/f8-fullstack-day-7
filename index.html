@@ -7,7 +7,9 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/course.css">
     <!-- Icon -->
     <link rel="stylesheet" href="./assets/fonts/flaticon.css" />
     <link
@@ -49,13 +51,31 @@
                 <a href="./">
                   <img src="./assets/img/logo.png" alt="Scholars" />
                 </a>
+                <label for="navbar-toggle">
+                  <div class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </div>
+                </label>
               </div>
-
+              
               <div class="header-right">
+                <input type="checkbox" id="navbar-toggle" hidden>
                 <!-- navbar -->
                 <ul class="navbar">
                   <li>
-                    <a href="#!">Home</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        Home
+                      </a>
+                      <label for="toggle-sub-menu1" class="icon-show-more">
+                          <span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </label>
+                    </div>
+                    <input type="checkbox" id="toggle-sub-menu1" hidden>
                     <ul class="sub-menu">
                       <li><a href="#!">Home version one</a></li>
                       <li><a href="#!">Home version Two</a></li>
@@ -63,7 +83,18 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#!">COURSES</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        COURSES
+                      </a>
+                      <label for="toggle-sub-menu2" class="icon-show-more">
+                        <span>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                       </span>
+                      </label>
+                    </div>
+
+                    <input type="checkbox" id="toggle-sub-menu2" hidden>
                     <ul class="sub-menu">
                       <li><a href="#!">Course 2 Column</a></li>
                       <li><a href="#!">Course 3 Column</a></li>
@@ -71,7 +102,18 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#!">EVENTS</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        EVENTS
+                      </a>
+                      <label for="toggle-sub-menu3" class="icon-show-more">
+                        <span>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </label>
+                    </div>
+
+                    <input type="checkbox" id="toggle-sub-menu3" hidden>
                     <ul class="sub-menu">
                       <li><a href="#!">Event List</a></li>
                       <li><a href="#!">Event Grid</a></li>
@@ -79,7 +121,18 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#!">Pages</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        Pages
+                      </a>
+                      <label for="toggle-sub-menu4" class="icon-show-more">
+                        <span>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </label>
+                    </div>
+                    <input type="checkbox" id="toggle-sub-menu4" hidden>
+
                     <ul class="sub-menu">
                       <li><a href="#!">Our teachers</a></li>
                       <li><a href="#!">teachers profile</a></li>
@@ -91,7 +144,18 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#!">PORTFOLIO</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        PORTFOLIO
+                      </a>
+                      <label for="toggle-sub-menu5" class="icon-show-more">
+                        <span>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </label>
+                    </div>
+                    
+                    <input type="checkbox" id="toggle-sub-menu5" hidden>
                     <ul class="sub-menu">
                       <li><a href="#!">portfolio 2 column</a></li>
                       <li><a href="#!">portfolio 3 column</a></li>
@@ -99,21 +163,48 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#!">BLOG</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        BLOG
+                      </a>
+                      <label for="toggle-sub-menu6" class="icon-show-more">
+                        <span>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </label>
+                    </div>
+
+                    <input type="checkbox" id="toggle-sub-menu6" hidden>
                     <ul class="sub-menu">
                       <li><a href="#!">Blog</a></li>
                       <li><a href="#!">Blog details</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a href="#!">SHOP</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        SHOP
+                      </a>
+                      <label for="toggle-sub-menu7" class="icon-show-more">
+                        <span>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </label>
+                    </div>
+                    
+                    <input type="checkbox" id="toggle-sub-menu7" hidden>
                     <ul class="sub-menu">
                       <li><a href="#!">Shop Page</a></li>
                       <li><a href="#!">Shop Details</a></li>
                     </ul>
                   </li>
+
                   <li>
-                    <a href="#!">Contact</a>
+                    <div class="item-link">
+                      <a href="#!">
+                        Contact
+                      </a>
+                    </div>
                   </li>
                 </ul>
 
@@ -149,13 +240,16 @@
           <div class="container">
             <div class="inner">
               <div class="main-title">
-                <h1>COURSES</h1>
+                <h1>Shop</h1>
                 <ul class="breadcrumbs">
                   <li>
                     <a href="#!">Home</a>
                   </li>
                   <li>
-                    <span>Courses</span>
+                    <a href="#!">Pages</a>
+                  </li>
+                  <li>
+                    <span>Shop</span>
                   </li>
                 </ul>
               </div>
@@ -169,464 +263,473 @@
       <div class="main-content">
         <div class="container">
           <div class="inner">
-            <!-- Sidebar -->
-            <div class="sidebar">
-              <form action="" class="form-search">
-                <input type="text" placeholder="Search Course..." />
-                <button>
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
+            <div class="row course-row-content">
+              <!-- Sidebar -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="sidebar sidebar-course">
+                  <form action="" class="form-search">
+                    <input type="text" placeholder="Search Course..." />
+                    <button>
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
 
-              <div class="course-list">
-                <h3>Topics</h3>
-                <ul>
-                  <li><a href="#!">Web Design</a></li>
-                  <li><a href="#!">Web Development</a></li>
-                  <li><a href="#!">Data Science</a></li>
-                  <li><a href="#!">Mathematics & Stats</a></li>
-                  <li><a href="#!">Robotics</a></li>
-                  <li><a href="#!">Digital Marketing</a></li>
-                  <li><a href="#!">Android Basics</a></li>
-                  <li><a href="#!">Machine Learning</a></li>
-                  <li><a href="#!">Artificial Intelligence</a></li>
-                </ul>
-              </div>
-
-              <div class="course-list">
-                <h3>Software</h3>
-                <ul>
-                  <li><a href="#!">Photoshop</a></li>
-                  <li><a href="#!">Illustrator</a></li>
-                  <li><a href="#!">HTML</a></li>
-                  <li><a href="#!">CSS</a></li>
-                  <li><a href="#!">Java Script</a></li>
-                  <li><a href="#!">DJango</a></li>
-                  <li><a href="#!">Apple</a></li>
-                  <li><a href="#!">Microsoft</a></li>
-                  <li><a href="#!">Ubuntu</a></li>
-                </ul>
-              </div>
-
-              <div class="course-list">
-                <h3>Level</h3>
-                <ul>
-                  <li><a href="#!">Beginner</a></li>
-                  <li><a href="#!">Intermediate</a></li>
-                  <li><a href="#!">Advanced</a></li>
-                  <li><a href="#!">Expert</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Content -->
-            <div class="content">
-              <!-- Nav tab -->
-              <ul class="nav-tab">
-                <li><a href="#!" class="active">New</a></li>
-                <li><a href="#!">Trending</a></li>
-                <li><a href="#!">Popular</a></li>
-                <li><a href="#!">Best-Selling</a></li>
-                <li><a href="#!">Most Rated</a></li>
-              </ul>
-
-              <!-- Card List -->
-              <div class="list-card">
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <img
-                        src="./assets/img/7.jpg"
-                        alt="Introduction to PHP language with Ajax & Redux"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to PHP language with Ajax & Redux</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t1.jpg"
-                            alt="Chris"
-                          />
-                          <span class="author-name">Chris</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>575</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!" class="free">Free</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="sidebar__item-list">
+                    <h3>Topics</h3>
+                    <ul>
+                      <li><a href="#!">Web Design</a></li>
+                      <li><a href="#!">Web Development</a></li>
+                      <li><a href="#!">Data Science</a></li>
+                      <li><a href="#!">Mathematics & Stats</a></li>
+                      <li><a href="#!">Robotics</a></li>
+                      <li><a href="#!">Digital Marketing</a></li>
+                      <li><a href="#!">Android Basics</a></li>
+                      <li><a href="#!">Machine Learning</a></li>
+                      <li><a href="#!">Artificial Intelligence</a></li>
+                    </ul>
                   </div>
-                </div>
 
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <div class="icon-top-right">
-                        <i class="fa fa-solid fa-bolt"></i>
-                      </div>
-                      <img
-                        src="./assets/img/8.jpg"
-                        alt="Introduction to DJango Ling with Remax options"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to DJango Ling with Remax options</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation.
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t2.jpg"
-                            alt="Kate"
-                          />
-                          <span class="author-name">Kate</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>620</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!">$29</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="sidebar__item-list">
+                    <h3>Software</h3>
+                    <ul>
+                      <li><a href="#!">Photoshop</a></li>
+                      <li><a href="#!">Illustrator</a></li>
+                      <li><a href="#!">HTML</a></li>
+                      <li><a href="#!">CSS</a></li>
+                      <li><a href="#!">Java Script</a></li>
+                      <li><a href="#!">DJango</a></li>
+                      <li><a href="#!">Apple</a></li>
+                      <li><a href="#!">Microsoft</a></li>
+                      <li><a href="#!">Ubuntu</a></li>
+                    </ul>
                   </div>
-                </div>
 
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <img
-                        src="./assets/img/9.jpg"
-                        alt="Introduction to DJango Ling with Remax options"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to DJango Ling with Remax options</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation.
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t3.jpg"
-                            alt="Sarah"
-                          />
-                          <span class="author-name">Sarah</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>1575</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!">$39</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <img
-                        src="./assets/img/7.jpg"
-                        alt="Introduction to PHP language with Ajax & Redux"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to PHP language with Ajax & Redux</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t1.jpg"
-                            alt="Chris"
-                          />
-                          <span class="author-name">Chris</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>575</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!" class="free">Free</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <div class="icon-top-right">
-                        <i class="fa fa-solid fa-bolt"></i>
-                      </div>
-                      <img
-                        src="./assets/img/8.jpg"
-                        alt="Introduction to DJango Ling with Remax options"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to DJango Ling with Remax options</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation.
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t2.jpg"
-                            alt="Kate"
-                          />
-                          <span class="author-name">Kate</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>620</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!">$29</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <img
-                        src="./assets/img/9.jpg"
-                        alt="Introduction to DJango Ling with Remax options"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to DJango Ling with Remax options</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation.
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t3.jpg"
-                            alt="Sarah"
-                          />
-                          <span class="author-name">Sarah</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>1575</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!">$39</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <img
-                        src="./assets/img/7.jpg"
-                        alt="Introduction to PHP language with Ajax & Redux"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to PHP language with Ajax & Redux</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t1.jpg"
-                            alt="Chris"
-                          />
-                          <span class="author-name">Chris</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>575</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!" class="free">Free</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <div class="icon-top-right">
-                        <i class="fa fa-solid fa-bolt"></i>
-                      </div>
-                      <img
-                        src="./assets/img/8.jpg"
-                        alt="Introduction to DJango Ling with Remax options"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to DJango Ling with Remax options</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation.
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t2.jpg"
-                            alt="Kate"
-                          />
-                          <span class="author-name">Kate</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>620</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!">$29</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-item">
-                  <div class="item-card">
-                    <a href="#!" class="item-card__img">
-                      <img
-                        src="./assets/img/9.jpg"
-                        alt="Introduction to DJango Ling with Remax options"
-                      />
-                    </a>
-
-                    <div class="item-card__content">
-                      <h4 class="item-card__title">
-                        <a href="#!"
-                          >Introduction to DJango Ling with Remax options</a
-                        >
-                      </h4>
-                      <p class="description">
-                        In this course, you will learn the of PHP Framework and
-                        Ajax. This course will build your foundation.
-                      </p>
-                      <div class="info">
-                        <div class="author">
-                          <img
-                            class="author-img"
-                            src="./assets/img/t3.jpg"
-                            alt="Sarah"
-                          />
-                          <span class="author-name">Sarah</span>
-                        </div>
-
-                        <div class="number-user">
-                          <i class="fa fa-user" aria-hidden="true"></i>
-                          <span>1575</span>
-                        </div>
-
-                        <div class="price">
-                          <a href="#!">$39</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="sidebar__item-list">
+                    <h3>Level</h3>
+                    <ul>
+                      <li><a href="#!">Beginner</a></li>
+                      <li><a href="#!">Intermediate</a></li>
+                      <li><a href="#!">Advanced</a></li>
+                      <li><a href="#!">Expert</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
+           
+           
+              <!-- Content -->
+              <div class="col-lg-8 col-xl-9">
+                <div class="content">
+                  <!-- Nav tab -->
+                  <ul class="nav-tab">
+                    <li><a href="#!" class="active">New</a></li>
+                    <li><a href="#!">Trending</a></li>
+                    <li><a href="#!">Popular</a></li>
+                    <li><a href="#!">Best-Selling</a></li>
+                    <li><a href="#!">Most Rated</a></li>
+                  </ul>
 
-              <!-- Navigation -->
-               <ul class="navigation">
-                <li><a href="#!" class="active">1</a></li>
-                <li><a href="#!">2</a></li>
-                <li><a href="#!">3</a></li>
-                <li><a href="#!" class="next">Next</a></li>
-               </ul>
+                  <!-- Course List -->
+                  <div class="course-list">
+                    <div class="row course-list__row">
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <img
+                              src="./assets/img/7.jpg"
+                              alt="Introduction to PHP language with Ajax & Redux"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to PHP language with Ajax & Redux</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t1.jpg"
+                                  alt="Chris"
+                                />
+                                <span class="author-name">Chris</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>575</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!" class="free">Free</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <div class="icon-top-right">
+                              <i class="fa fa-solid fa-bolt"></i>
+                            </div>
+                            <img
+                              src="./assets/img/8.jpg"
+                              alt="Introduction to DJango Ling with Remax options"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to DJango Ling with Remax options</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t2.jpg"
+                                  alt="Kate"
+                                />
+                                <span class="author-name">Kate</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>620</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!">$29</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <img
+                              src="./assets/img/9.jpg"
+                              alt="Introduction to DJango Ling with Remax options"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to DJango Ling with Remax options</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t3.jpg"
+                                  alt="Sarah"
+                                />
+                                <span class="author-name">Sarah</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>1575</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!">$39</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <img
+                              src="./assets/img/7.jpg"
+                              alt="Introduction to PHP language with Ajax & Redux"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to PHP language with Ajax & Redux</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t1.jpg"
+                                  alt="Chris"
+                                />
+                                <span class="author-name">Chris</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>575</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!" class="free">Free</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <div class="icon-top-right">
+                              <i class="fa fa-solid fa-bolt"></i>
+                            </div>
+                            <img
+                              src="./assets/img/8.jpg"
+                              alt="Introduction to DJango Ling with Remax options"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to DJango Ling with Remax options</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t2.jpg"
+                                  alt="Kate"
+                                />
+                                <span class="author-name">Kate</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>620</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!">$29</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <img
+                              src="./assets/img/9.jpg"
+                              alt="Introduction to DJango Ling with Remax options"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to DJango Ling with Remax options</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t3.jpg"
+                                  alt="Sarah"
+                                />
+                                <span class="author-name">Sarah</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>1575</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!">$39</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <img
+                              src="./assets/img/7.jpg"
+                              alt="Introduction to PHP language with Ajax & Redux"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to PHP language with Ajax & Redux</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t1.jpg"
+                                  alt="Chris"
+                                />
+                                <span class="author-name">Chris</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>575</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!" class="free">Free</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <div class="icon-top-right">
+                              <i class="fa fa-solid fa-bolt"></i>
+                            </div>
+                            <img
+                              src="./assets/img/8.jpg"
+                              alt="Introduction to DJango Ling with Remax options"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to DJango Ling with Remax options</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t2.jpg"
+                                  alt="Kate"
+                                />
+                                <span class="author-name">Kate</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>620</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!">$29</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="course-card">
+                          <a href="#!" class="course-card__img">
+                            <img
+                              src="./assets/img/9.jpg"
+                              alt="Introduction to DJango Ling with Remax options"
+                            />
+                          </a>
+
+                          <div class="course-card__content">
+                            <h4 class="course-card__title">
+                              <a href="#!"
+                                >Introduction to DJango Ling with Remax options</a
+                              >
+                            </h4>
+                            <p class="description">
+                              In this course, you will learn the of PHP Framework and
+                              Ajax. This course will build your foundation.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <img
+                                  class="author-img"
+                                  src="./assets/img/t3.jpg"
+                                  alt="Sarah"
+                                />
+                                <span class="author-name">Sarah</span>
+                              </div>
+
+                              <div class="number-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>1575</span>
+                              </div>
+
+                              <div class="price">
+                                <a href="#!">$39</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Navigation -->
+                  <ul class="navigation">
+                    <li><a href="#!" class="active">1</a></li>
+                    <li><a href="#!">2</a></li>
+                    <li><a href="#!">3</a></li>
+                    <li><a href="#!" class="next">Next</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -636,72 +739,83 @@
       <div class="footer">
         <div class="container">
           <div class="inner">
-
-            <div class="footer-logo footer-item">
-              <a href="./" class="footer-logo-link">
-                <img src="./assets/img/logo.png" alt="Scholars" />
-              </a>
-              <p class="footer-description">
-                Scholars provides universal access to the world’s best
-                education, partnering with top universities and organizations to
-                offer courses online.
-              </p>
-              <p>© 2017 Scholars Inc. All rights reserved</p>
-              <ul class="footer-app">
-                <li>
-                  <a href="#!">
-                    <img src="./assets/img/android.png" alt="App Store">
+            <div class="row footer-row-inner">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-logo footer-item">
+                  <a href="./" class="footer-logo-link">
+                    <img src="./assets/img/logo.png" alt="Scholars" />
                   </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <img src="./assets/img/apple.png" alt="Google Play">
-                  </a>
-                </li>
-            </div>
+                  <p class="footer-description">
+                    Scholars provides universal access to the world’s best
+                    education, partnering with top universities and organizations to
+                    offer courses online.
+                  </p>
+                  <p>© 2017 Scholars Inc. All rights reserved</p>
+                  <ul class="footer-app">
+                    <li>
+                      <a href="#!">
+                        <img src="./assets/img/android.png" alt="App Store">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!">
+                        <img src="./assets/img/apple.png" alt="Google Play">
+                      </a>
+                    </li>
+                </div>
+              </div>
+            
+              <div class="col-12 col-md-3 col-lg-2">
+                <div class="footer-list footer-item">
+                  <h3>Scholars</h3>
+                  <ul>
+                    <li><a href="#!">About Us</a></li>
+                    <li><a href="#!">Leadership</a></li>
+                    <li><a href="#!">Careers</a></li>
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
 
-            <div class="footer-list footer-item">
-              <h3>Scholars</h3>
-              <ul>
-                <li><a href="#!">About Us</a></li>
-                <li><a href="#!">Leadership</a></li>
-                <li><a href="#!">Careers</a></li>
-                <li><a href="#!">FAQ</a></li>
-                <li><a href="#!">Contact</a></li>
-              </ul>
-            </div>
+              <div class="col-12 col-md-3 col-lg-2">
+                <div class="footer-list footer-item">
+                  <h3>Product</h3>
+                  <ul>
+                    <li><a href="#!">Education Light</a></li>
+                    <li><a href="#!">Education Starter</a></li>
+                    <li><a href="#!">Education Premium</a></li>
+                    <li><a href="#!">Business</a></li>
+                    <li><a href="#!">Business Plus</a></li>
+                  </ul>
+                </div>
+              </div>
 
-            <div class="footer-list footer-item">
-              <h3>Product</h3>
-              <ul>
-                <li><a href="#!">Education Light</a></li>
-                <li><a href="#!">Education Starter</a></li>
-                <li><a href="#!">Education Premium</a></li>
-                <li><a href="#!">Business</a></li>
-                <li><a href="#!">Business Plus</a></li>
-              </ul>
-            </div>
+              <div class="col-12 col-md-6 col-lg-2">
+                <div class="footer-list footer-item">
+                  <h3>Support</h3>
+                  <ul>
+                    <li><a href="#!">Support</a></li>
+                    <li><a href="#!">Toll Free Number</a></li>
+                    <li><a href="#!">Open Ticket</a></li>
+                    <li><a href="#!">System Requirements</a></li>
+                    <li><a href="#!">Feedback</a></li>
+                  </ul>
+                </div>
+              </div>
 
-            <div class="footer-list footer-item">
-              <h3>Support</h3>
-              <ul>
-                <li><a href="#!">Support</a></li>
-                <li><a href="#!">Toll Free Number</a></li>
-                <li><a href="#!">Open Ticket</a></li>
-                <li><a href="#!">System Requirements</a></li>
-                <li><a href="#!">Feedback</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-subscribe footer-item">
-              <h3>Subscribe Us</h3>
-              <p>Subscribe us to get all the latest news from us</p>
-              <form action="">
-                <input type="text" placeholder="Your Email">
-                <button>
-                  <span>SEND</span>
-                </button>
-              </form>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-subscribe footer-item">
+                  <h3>Subscribe Us</h3>
+                  <p>Subscribe us to get all the latest news from us</p>
+                  <form action="">
+                    <input type="text" placeholder="Your Email">
+                    <button>
+                      <span>SEND</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
